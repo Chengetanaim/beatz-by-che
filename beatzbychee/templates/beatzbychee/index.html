@@ -1,0 +1,51 @@
+{% extends 'beatzbychee/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beatz By Che</title>
+</head>
+
+<body>
+
+
+
+{% block content %}
+
+    <style type="text/css">
+        body {
+            background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+        }
+
+        .container {
+            max-width: 960px;
+        }
+        .pricing-header {
+            max-width: 700px;
+}
+    </style>
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal"></h1>
+      <p class="fs-5 text-muted">There is no right or wrong.  Only a song</p>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <img src="{% static 'media/play-button.png' %}" width="350">
+    </div>
+
+
+
+
+{% endblock content %}
+
+</body>
+</html>

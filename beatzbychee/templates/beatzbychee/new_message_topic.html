@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Message</title>
+</head>
+<body>
+{% extends "beatzbychee/base.html" %}
+
+{% block content %}
+    <br>
+    <p> Drop your email here too:) </p>
+    <form action="{% url 'beatzbychee:new_message_topic' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button name="submit">Add message</button>
+
+    </form>
+{% endblock content %}
+
+</body>
+</html>

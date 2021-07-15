@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Music</title>
+</head>
+<body>
+{% extends 'beatzbychee/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal"></h1>
+      <p class="fs-5 text-muted">There is no right or wrong.  Only a song</p>
+    </div>
+    <br>
+     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary ">
+            <h4 class="my-0 fw-normal">Misunderstood</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$10<small class="text-muted fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>$5 for leasing</li>
+                <li></li>
+                <li></li>
+                <li>Not yet sold.</li>
+            </ul>
+             <audio controls class="w-100">
+                <source src="{% static 'media/Misunderstood.mp3' %}">
+                Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Play with my Intelligence</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$10<small class="text-muted fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>$5 for leasing</li>
+              <li></li>
+              <li></li>
+              <li>Not yet sold.</li>
+            </ul>
+            <audio controls class="w-100">
+                <source src="{% static 'media/pwmi.mp3' %}">
+                Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Real</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$10<small class="text-muted fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>$5 for leasing</li>
+              <li></li>
+              <li></li>
+              <li>Not yet sold.</li>
+            </ul>
+            <audio controls class="w-100">
+                <source src="{% static 'media/Real33.mp3' %}">
+                Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+{% endblock content %}
+</body>
+</html>
