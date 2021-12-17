@@ -1,0 +1,1 @@
+web: gunicorn beatzbyche.wsgi --log-file -
